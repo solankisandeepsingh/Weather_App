@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: conic-gradient(green , yellow, red); 
+    /* background: conic-gradient(blue , green, red); */
+    /* background: repeating-conic-gradient(red 10deg, green 20deg);
+    /* background: linear-gradient(135deg, var(--blue-1),var(--blue-2)); */
+}
+
+:root{
+    --white: #ffffff;
+    --off-white: #e5e5e5;
+    --transp-white-1: rgba(255,255,255,0.25);
+    --transp-white-2: rgba(255,255,255,0.1);
+    --blue-1 : #62b8f5;
+    --blue-2 : #4475ef;
+    --shadow : rgba(3,46,87,0.2);
+}
+.wrapper{
+    font-size: 16px;
+    width: 90vw;
+    max-width: 28em;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    top: 50%;
+    left: 50%;
+}
+.container{
+    width: 100%;
+    background: var(--transp-white-2);
+    backdrop-filter: blur(10px);
+    padding: 48px 28px;
+    border: 2px solid var(--transp-white-2);
+    border-radius: 0.6em;
+    box-shadow: 0 1.8em 3.7em var(--shadow);
+    text-align: center;
+}
+.shape{
+    position: absolute;
+    background-color: var(--transp-white-1);
+    backdrop-filter: blur(20px);
+    border: 2px solid var(--transp-white-2);
+    border-radius: 50%;
+}
+.shape-1{
+    /* height: 216px;
+    width: 216px;
+    right: -120px;
+    top: 28 px; */
+    height: 13em;
+    width: 13em;
+    right: -6.5em;
+    top: 1.8em;
+}
+.shape-2{
+    /* height: 176px;
+    width: 176px;
+    bottom: 60px;
+    left: 40px; */
+    height: 11em;
+    width: 11em;
+    bottom: -3.5em;
+    left: -2.5em;
+}
+.search-container{
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.25em;
+}
+.search-container input, 
+.search-container button{
+    outline: none;
+    font-size: 1em;
+    border: none;
+}
+.search-container input{
+    padding: 0.7em;
+    background-color: transparent;
+    border-bottom: 2px solid var(--transp-white-1);
+    color: var(--black);
+    font-weight: 300;
+}
+.search-container input::placeholder{
+    color: var(--off-white);
+}
+.search-container input:focus{
+    border-color: var(--white);
+}
+.search-container button{
+    color: var(--blue-2);
+    background-color: var(--white);
+    border-radius: 0.3em;
+} 
+
+
+
+
+
+
+
+
+/* // let result = document.getElementById('result');
+// let serachBtn = document.getElementById("search-btn");
+// let cityRef = document.getElementById('city');
+
+// // const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${this.city}&appid=${this.apiKey}`);
+// let getWeather = ()=>{
+//     let cityValue = cityRef.value;
+
+//     //if input field is empty :
+//     if(cityValue.length == 0){
+//         result.innerHTML = `<h3>Please Enter a city name</h3>`;
+//     } else{
+//         let url = `https://api.openweathermap.org/data/2.5/forecast?q=${this.city}&appid=${this.apiKey}`;
+//         fetch(url).then((resp)=> resp.json())
+//         .then((data)=>{
+//             console.log(data);
+//         })
+
+//     }
+// }
+// window.addEventListener("load", getWeather); */
